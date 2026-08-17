@@ -12,6 +12,8 @@ while True:
         print("Error: Failed to grab frame.")
         break
 
+    frame = cv2.flip(frame, 1)  # mirror horizontally
+
     cv2.imshow("Webcam Test", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
