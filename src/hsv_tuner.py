@@ -7,10 +7,10 @@ def nothing(x):
 cap = cv2.VideoCapture(0)
 
 cv2.namedWindow("Trackbars")
-cv2.createTrackbar("L-H", "Trackbars", 0, 179, nothing)
-cv2.createTrackbar("L-S", "Trackbars", 100, 255, nothing)
-cv2.createTrackbar("L-V", "Trackbars", 100, 255, nothing)
-cv2.createTrackbar("U-H", "Trackbars", 179, 179, nothing)
+cv2.createTrackbar("L-H", "Trackbars", 15, 179, nothing)
+cv2.createTrackbar("L-S", "Trackbars", 80, 255, nothing)
+cv2.createTrackbar("L-V", "Trackbars", 80, 255, nothing)
+cv2.createTrackbar("U-H", "Trackbars", 40, 179, nothing)
 cv2.createTrackbar("U-S", "Trackbars", 255, 255, nothing)
 cv2.createTrackbar("U-V", "Trackbars", 255, 255, nothing)
 
